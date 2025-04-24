@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Past Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="add-past-task-page">
+        <h1>Add Past Task</h1>
+        <div class="form-group">
+            <label for="past-task-name">Task Name</label>
+            <input type="text" id="past-task-name" required>
+        </div>
+        <div class="form-group">
+            <label for="past-task-date">Date Completed</label>
+            <input type="date" id="past-task-date" required>
+        </div>
+        <div class="form-group">
+            <label for="past-task-satisfaction">Satisfaction Level (1-10)</label>
+            <input type="number" id="past-task-satisfaction" min="1" max="10" required>
+        </div>
+        <div class="form-group">
+            <label for="past-task-description">Description (Optional)</label>
+            <textarea id="past-task-description" rows="4"></textarea>
+        </div>
+        <button class="submit-btn" onclick="addPastTask()">Add Past Task</button>
+        <button class="back-btn" onclick="window.location.href='main.html'">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
